@@ -1,0 +1,91 @@
+{
+  "theme": "LIGHT",
+  "archetype": "Archetype 4 (Swiss & High-Contrast) adapted for Government/Institutional",
+  "reasoning": "A government-affiliated tax collection company must project authority, competence, and clarity. The selected Swiss/High-Contrast archetype utilizes a stark white foundation with high-contrast slate text and the requested Azure blue (#1E88E5) for precise, functional focal points. This approach avoids generic SaaS templates while remaining strictly professional.",
+  "colors": {
+    "background": "#FFFFFF",
+    "background_alt": "#F8FAFC",
+    "primary": "#1E88E5",
+    "primary_hover": "#1565C0",
+    "text_primary": "#0F172A",
+    "text_secondary": "#475569",
+    "border": "#E2E8F0",
+    "accent_subtle": "#EFF6FF",
+    "success": "#10B981",
+    "warning": "#F59E0B"
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Outfit, sans-serif",
+      "body": "IBM Plex Sans, sans-serif",
+      "mono": "IBM Plex Mono, monospace"
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-semibold tracking-tight leading-none text-slate-900",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight leading-tight text-slate-900",
+      "h3": "text-xl sm:text-2xl font-medium tracking-tight text-slate-800",
+      "body": "text-base leading-relaxed text-slate-700",
+      "label": "text-xs font-semibold tracking-[0.2em] uppercase text-slate-500"
+    },
+    "guidelines": "Never use Inter for headings. Use Outfit for a modern, slightly geometric authority. Keep line-height tight on headings."
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous Spacing Philosophy. Use p-8, p-12, or p-16 for main container padding. Avoid cramped sections.",
+    "grids": {
+      "marketing": "Use The 'Tetris' Grid for services (grid-cols-1 md:grid-cols-8 lg:grid-cols-12, wide gap-8 to gap-12, asymmetrical spanning like col-span-4 row-span-2).",
+      "dashboards": "Use The 'Control Room' Grid for the CMS/Admin sections and Portals (tight gap-4 or gap-6, utilized full height)."
+    }
+  },
+  "surfaces": {
+    "header": "Crystal Glassmorphism (bg-white/70 backdrop-blur-xl border-b border-slate-200/50). Must not be fully transparent.",
+    "cards": "Flat background with a sharp 1px border (border-slate-200). Hover state: slight lift (-translate-y-1), subtle shadow (shadow-lg), and border color shifts to primary (#1E88E5).",
+    "footer": "Dark mode footer (bg-slate-900 text-slate-400) with massive spacing (py-24). Highlight the primary brand in white."
+  },
+  "components": {
+    "buttons": "Square or very slightly rounded (rounded-md). High contrast. Primary buttons must be bg-[#1E88E5] text-white hover:bg-[#1565C0]. Include hover states for all buttons.",
+    "forms": "Use Shadcn Form components. Inputs must have clear border-slate-300 focus:border-[#1E88E5] focus:ring-1 focus:ring-[#1E88E5].",
+    "navigation": "Clear visible desktop links. Avoid hiding everything behind a hamburger menu on desktop. Use Shadcn NavigationMenu if appropriate.",
+    "marquee": "Use an organic, slow-moving 'Editorial Ribbon' for the Municipalities logos. Pale background with clear, high-contrast logos."
+  },
+  "animations": {
+    "scrolling": "Use 'lenis' for smooth momentum scrolling.",
+    "page_load": "Framer motion staggered fade-ins for grids.",
+    "hover": "Transition transform 0.2s ease, opacity 0.2s ease. Explicitly set text color on hover."
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/fbfbcf1c-427c-42d6-8a77-0f42b89c9ef7/images/3af01a3cb5062057badf7c4d957b64fa147ee45c05cc6a08e169b7747b995167.png",
+      "description": "Abstract 3D network and data visualization for the hero section background to convey tech-forward taxation."
+    },
+    "hero_office": {
+      "url": "https://images.unsplash.com/photo-1694702740570-0a31ee1525c7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBnbGFzcyUyMG9mZmljZSUyMGJ1aWxkaW5nJTIwYmx1ZSUyMHNreXxlbnwwfHx8fDE3NzQ4NjUwNDd8MA&ixlib=rb-4.1.0&q=85",
+      "description": "Modern glass office building for 'Chi siamo' or hero alternative."
+    },
+    "team_meeting": {
+      "url": "https://images.unsplash.com/photo-1758518727077-ffb66ffccced?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODR8MHwxfHNlYXJjaHwyfHxidXNpbmVzcyUyMHBlb3BsZSUyMG1lZXRpbmclMjBvZmZpY2V8ZW58MHx8fHwxNzc0ODY1MDQ4fDA&ixlib=rb-4.1.0&q=85",
+      "description": "Business people in a meeting for the 'Lavora con noi' or Profile sections."
+    },
+    "municipality_logo_1": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/fbfbcf1c-427c-42d6-8a77-0f42b89c9ef7/images/66bbab68e850d5fe3dad5d8d07aeb3fef9c31468710c8ac950119cbbffc1be73.png",
+      "description": "Client municipality logo 1."
+    },
+    "municipality_logo_2": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/fbfbcf1c-427c-42d6-8a77-0f42b89c9ef7/images/eba357d88bc484c935e43dad9d4770698ac218a875a1e816dc17c8140fb51bfc.png",
+      "description": "Client municipality logo 2."
+    }
+  },
+  "icons": {
+    "library": "lucide-react",
+    "usage": "Use stroke-width of 1.5 for a clean, professional, non-chunky look. Use the primary blue (#1E88E5) for active/highlighted icons."
+  },
+  "instructions_to_main_agent": [
+    "Strictly adhere to the selected fonts (Outfit for headings, IBM Plex Sans for body). Add them via Google Fonts in index.html.",
+    "Do not use generic template layouts. Construct the services grid using the 'Tetris' bento logic with asymmetrical spans.",
+    "All interactive elements must include data-testid attributes.",
+    "Never use pure white (#FFFFFF) text on a transparent background over an image without a gradient overlay (bg-black/30 to bg-black/50) or glassmorphism panel.",
+    "Use only Shadcn components for forms, dialogs, and interactive widgets. Strip away the Vercel/Stripe default look to match the high-contrast Swiss styling.",
+    "Do NOT use placeholder text for images. Use only the provided image URLs.",
+    "Ensure complete WCAG AA accessibility. Check contrast for the primary blue (#1E88E5) against white.",
+    "Structure pages as single Page or multiple Pages, utilizing React Router if necessary, given the requested multiple pages (Profile, Services, etc.)."
+  ]
+}
