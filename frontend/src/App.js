@@ -9,6 +9,7 @@ import { Toaster } from './components/ui/sonner';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import CookieBanner from './components/CookieBanner';
+import ScrollToTop from './components/ScrollToTop';
 
 // Public Pages
 import HomePage from './pages/HomePage';
@@ -38,6 +39,7 @@ function App() {
       <AuthProvider>
         <SiteProvider>
           <BrowserRouter>
+            <ScrollToTop />
             <Routes>
               {/* Public Routes */}
               <Route path="/" element={<PublicLayout><HomePage /></PublicLayout>} />
