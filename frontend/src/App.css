@@ -1,34 +1,164 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+/* App specific styles */
+
+.az-gradient-text {
+  background: linear-gradient(135deg, #1E88E5 0%, #1565C0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+/* Header glassmorphism */
+.az-header {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.5);
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+/* Card hover effect */
+.az-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-.App-link {
-    color: #61dafb;
+.az-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 40px -10px rgba(30, 136, 229, 0.15);
+  border-color: #1E88E5;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+/* Button styles */
+.az-btn-primary {
+  background-color: #1E88E5;
+  color: white;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.az-btn-primary:hover {
+  background-color: #1565C0;
+  transform: translateY(-1px);
+}
+
+/* Service icon container */
+.az-icon-container {
+  background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+  transition: background 0.2s ease;
+}
+
+.az-card:hover .az-icon-container {
+  background: linear-gradient(135deg, #1E88E5 0%, #1565C0 100%);
+}
+
+.az-card:hover .az-icon-container svg {
+  color: white;
+}
+
+/* Hero section */
+.az-hero-overlay {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.85) 0%, rgba(30, 136, 229, 0.7) 100%);
+}
+
+/* Footer */
+.az-footer {
+  background-color: #0F172A;
+}
+
+/* Municipality logo */
+.az-municipality-logo {
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.az-municipality-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Navigation active link */
+.az-nav-active {
+  color: #1E88E5;
+  position: relative;
+}
+
+.az-nav-active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #1E88E5;
+}
+
+/* Form focus states */
+.az-input:focus {
+  border-color: #1E88E5;
+  box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.1);
+}
+
+/* Admin sidebar */
+.az-admin-sidebar {
+  background: linear-gradient(180deg, #0F172A 0%, #1E293B 100%);
+}
+
+/* Loading spinner */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.az-spinner {
+  animation: spin 1s linear infinite;
+}
+
+/* Marquee for municipalities */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.az-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+.az-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Cookie banner */
+.az-cookie-banner {
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+/* Staggered animation for grids */
+.az-stagger-1 { animation-delay: 0.1s; }
+.az-stagger-2 { animation-delay: 0.2s; }
+.az-stagger-3 { animation-delay: 0.3s; }
+.az-stagger-4 { animation-delay: 0.4s; }
+.az-stagger-5 { animation-delay: 0.5s; }
+.az-stagger-6 { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.az-fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-out forwards;
 }
