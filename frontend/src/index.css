@@ -161,6 +161,66 @@ html {
   color: var(--az-text-secondary);
 }
 
+.rich-content h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--az-text-primary);
+}
+
+.rich-content h4 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--az-text-primary);
+}
+
+.rich-content blockquote {
+  border-left: 4px solid #1E88E5;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  background: #f0f7ff;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #334155;
+}
+
+.rich-content hr {
+  border: none;
+  border-top: 2px solid #e2e8f0;
+  margin: 2rem 0;
+}
+
+.rich-content img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.rich-content figure {
+  margin: 1.5rem 0;
+}
+
+.rich-content figcaption {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.rich-content a {
+  color: #1E88E5;
+  text-decoration: underline;
+}
+
+.rich-content a:hover {
+  color: #1565C0;
+}
+
 /* Rich Text Editor Styles */
 .rich-text-editor .ProseMirror {
   outline: none;
