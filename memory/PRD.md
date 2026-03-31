@@ -43,7 +43,7 @@ Sviluppare un sito web professionale, moderno, dinamico e scalabile per una soci
 - **7 categorie modulistica**: IMU, TARI, TOSAP, Pubblicità, Riscossione Coattiva, Codice Strada, Generale
 - **Pagina pubblica modulistica**: /servizi-online/portale-contribuenti con ricerca, filtri, download
 
-### 2026-03-31: Editor Visivo Avanzato WYSIWYG
+### 2026-03-31: Editor Visivo Avanzato WYSIWYG per Servizi
 - **Editor TipTap**: Editor WYSIWYG completo integrato nel CMS
 - **Formattazione testo**: H1-H4, grassetto, corsivo, sottolineato, barrato, evidenziato
 - **Allineamento**: Sinistra, centro, destra, giustificato
@@ -53,21 +53,31 @@ Sviluppare un sito web professionale, moderno, dinamico e scalabile per una soci
 - **Link**: Inserimento link con URL
 - **Spaziature**: Piccola (16px), Media (32px), Grande (48px)
 - **Gestione SEO**: Meta Title, Meta Description, anteprima Google
-- **ServicesEditor**: Nuovo editor dedicato per i 10 servizi con tabs Contenuto/Impostazioni/SEO
-- **Stili CSS**: service-content per rendering corretto nel frontend
+- **ServicesEditor**: Editor dedicato per i 10 servizi con tabs Contenuto/Impostazioni/SEO
+
+### 2026-03-31: Editor WYSIWYG per Pagine Istituzionali
+- **PagesEditor**: Editor WYSIWYG avanzato per tutte le pagine istituzionali
+- **Sidebar raggruppata**: Pagine organizzate per Profilo (6 pagine) e Legal (2 pagine)
+- **Editor TipTap completo**: Stesse funzionalità dell'editor servizi (formattazione, immagini, link, ecc.)
+- **Tab Contenuto/Impostazioni/SEO**: Gestione contenuto, pubblicazione, e ottimizzazione SEO
+- **Crea/Elimina pagine**: Supporto creazione nuove pagine e eliminazione pagine custom
+- **CSS rich-content**: Stili completi per rendering HTML nelle pagine pubbliche
+- **Test completi**: 100% backend (15/15) e frontend passati
 
 ## Backlog Prioritizzato
 ### P0 (Critico)
-- ✅ Homepage funzionale
-- ✅ CMS Admin
-- ✅ Autenticazione JWT
-- ✅ Media Manager
-- ✅ Modulistica
+- [x] Homepage funzionale
+- [x] CMS Admin
+- [x] Autenticazione JWT
+- [x] Media Manager
+- [x] Modulistica
+- [x] Editor WYSIWYG Servizi
+- [x] Editor WYSIWYG Pagine Istituzionali
 
 ### P1 (Importante)
-- [ ] Integrazione Resend per notifiche email
-- [ ] Google Maps nella pagina contatti
-- [ ] Upload logo aziendale
+- [ ] Integrazione Resend per notifiche email (necessita API Key utente)
+- [ ] Google Maps nella pagina contatti (necessita API Key utente)
+- [ ] Upload logo aziendale da CMS
 
 ### P2 (Nice to have)
 - [ ] Multi-lingua
@@ -76,7 +86,5 @@ Sviluppare un sito web professionale, moderno, dinamico e scalabile per una soci
 
 ## Next Tasks
 1. Integrare Resend per notifiche email form contatto/candidature
-2. Configurare Google Maps API per mappa sede
-3. Caricare logo aziendale tramite Media Manager
-4. Aggiungere comuni clienti nel CMS
-5. Caricare documenti modulistica
+2. Configurare Google Maps API per mappa sede (Via Imera, 4B - 90010 Campofelice di Roccello PA)
+3. Upload logo aziendale tramite Media Manager
