@@ -161,6 +161,246 @@ html {
   color: var(--az-text-secondary);
 }
 
+/* Rich Text Editor Styles */
+.rich-text-editor .ProseMirror {
+  outline: none;
+  min-height: 250px;
+}
+
+.rich-text-editor .ProseMirror p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+.rich-text-editor .ProseMirror h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--az-text-primary);
+}
+
+.rich-text-editor .ProseMirror h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: var(--az-text-primary);
+}
+
+.rich-text-editor .ProseMirror h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--az-text-primary);
+}
+
+.rich-text-editor .ProseMirror h4 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--az-text-primary);
+}
+
+.rich-text-editor .ProseMirror ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.rich-text-editor .ProseMirror ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.rich-text-editor .ProseMirror li {
+  margin-bottom: 0.25rem;
+}
+
+.rich-text-editor .ProseMirror blockquote {
+  border-left: 4px solid var(--az-blue);
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+  color: var(--az-text-secondary);
+  background-color: var(--az-accent-subtle);
+  padding: 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.rich-text-editor .ProseMirror hr {
+  border: none;
+  border-top: 2px solid var(--az-border);
+  margin: 2rem 0;
+}
+
+.rich-text-editor .ProseMirror code {
+  background-color: var(--az-bg-alt);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.875em;
+}
+
+.rich-text-editor .ProseMirror pre {
+  background-color: #1e293b;
+  color: #e2e8f0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.rich-text-editor .ProseMirror pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.rich-text-editor .ProseMirror img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.rich-text-editor .ProseMirror figure {
+  margin: 1.5rem 0;
+}
+
+.rich-text-editor .ProseMirror figcaption {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--az-text-secondary);
+  margin-top: 0.5rem;
+}
+
+.rich-text-editor .ProseMirror p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: #94a3b8;
+  pointer-events: none;
+  height: 0;
+}
+
+.rich-text-editor .ProseMirror mark {
+  background-color: #fef08a;
+  padding: 0.125rem 0;
+}
+
+/* Service content styles for frontend */
+.service-content h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+.service-content h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: #0f172a;
+}
+
+.service-content h3 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
+}
+
+.service-content h4 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
+}
+
+.service-content p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+  color: #475569;
+}
+
+.service-content ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-content ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.service-content li {
+  margin-bottom: 0.25rem;
+  color: #475569;
+}
+
+.service-content blockquote {
+  border-left: 4px solid #1E88E5;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+  color: #64748b;
+  background-color: #EFF6FF;
+  padding: 1rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.service-content hr {
+  border: none;
+  border-top: 2px solid #e2e8f0;
+  margin: 2rem 0;
+}
+
+.service-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.service-content figure {
+  margin: 1.5rem 0;
+}
+
+.service-content figcaption {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-top: 0.5rem;
+}
+
+.service-content a {
+  color: #1E88E5;
+  text-decoration: underline;
+}
+
+.service-content a:hover {
+  color: #1565C0;
+}
+
+.service-content mark {
+  background-color: #fef08a;
+  padding: 0.125rem 0;
+}
+
 @layer base {
   [data-debug-wrapper="true"] {
     display: contents !important;

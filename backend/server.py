@@ -152,16 +152,22 @@ class ServiceCreate(BaseModel):
     name: str
     slug: str
     description: str
+    content: Optional[str] = None  # Rich HTML content
     icon: str
     order: int = 0
     published: bool = True
+    meta_title: Optional[str] = None
+    meta_description: Optional[str] = None
 
 class ServiceUpdate(BaseModel):
     name: Optional[str] = None
     description: Optional[str] = None
+    content: Optional[str] = None  # Rich HTML content
     icon: Optional[str] = None
     order: Optional[int] = None
     published: Optional[bool] = None
+    meta_title: Optional[str] = None
+    meta_description: Optional[str] = None
 
 class OnlineServiceCreate(BaseModel):
     name: str

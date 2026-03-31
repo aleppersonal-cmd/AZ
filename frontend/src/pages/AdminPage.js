@@ -18,10 +18,12 @@ import {
   LogOut, Settings, FileText, Users, Landmark, Briefcase, 
   MessageSquare, Upload, Plus, Trash2, Edit, Save, Eye, EyeOff,
   Building2, Globe, Mail, Phone, Clock, MapPin, Image as ImageIcon,
-  Download, RefreshCw, FolderOpen, Tag
+  Download, RefreshCw, FolderOpen, Tag, Pencil
 } from 'lucide-react';
 import MediaManager from '../components/MediaManager';
 import ModulisticaManager from '../components/ModulisticaManager';
+import RichTextEditor from '../components/RichTextEditor';
+import ServicesEditor from '../components/ServicesEditor';
 
 const API_URL = process.env.REACT_APP_BACKEND_URL;
 
@@ -127,7 +129,7 @@ const AdminPage = () => {
             <PagesTab />
           </TabsContent>
           <TabsContent value="services">
-            <ServicesTab />
+            <ServicesEditor />
           </TabsContent>
           <TabsContent value="municipalities">
             <MunicipalitiesTab />
