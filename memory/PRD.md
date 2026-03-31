@@ -43,6 +43,19 @@ Sviluppare un sito web professionale, moderno, dinamico e scalabile per una soci
 - **7 categorie modulistica**: IMU, TARI, TOSAP, Pubblicità, Riscossione Coattiva, Codice Strada, Generale
 - **Pagina pubblica modulistica**: /servizi-online/portale-contribuenti con ricerca, filtri, download
 
+### 2026-03-31: Editor Visivo Avanzato WYSIWYG
+- **Editor TipTap**: Editor WYSIWYG completo integrato nel CMS
+- **Formattazione testo**: H1-H4, grassetto, corsivo, sottolineato, barrato, evidenziato
+- **Allineamento**: Sinistra, centro, destra, giustificato
+- **Elenchi**: Puntati e numerati
+- **Blocchi**: Citazioni, separatori, blocchi codice
+- **Inserimento immagini**: Integrato con Media Manager, selezione dimensione/allineamento, alt text, didascalie
+- **Link**: Inserimento link con URL
+- **Spaziature**: Piccola (16px), Media (32px), Grande (48px)
+- **Gestione SEO**: Meta Title, Meta Description, anteprima Google
+- **ServicesEditor**: Nuovo editor dedicato per i 10 servizi con tabs Contenuto/Impostazioni/SEO
+- **Stili CSS**: service-content per rendering corretto nel frontend
+
 ## Backlog Prioritizzato
 ### P0 (Critico)
 - ✅ Homepage funzionale
