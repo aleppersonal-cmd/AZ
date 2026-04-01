@@ -3,9 +3,15 @@ version: "3.9"
 services:
 
   mongo:
+
     image: mongo:7
+
     container_name: az_mongo
+
     restart: always
+
+    env_file:
+      - .env
 
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USERNAME}
@@ -19,14 +25,21 @@ services:
       - az-network
 
 
+
   backend:
+
     build: ./backend
+
     container_name: az_backend
 
     restart: always
 
     env_file:
-      - .env
+      - ./backend/.env
+
+    volumes:
+      - ./backend:/app
+      - ./uploads:/app/uploads
 
     depends_on:
       - mongo
@@ -35,18 +48,28 @@ services:
       - az-network
 
 
+
   frontend:
+
     build: ./frontend
 
     container_name: az_frontend
 
     restart: always
 
+    env_file:
+      - ./frontend/.env
+
+    depends_on:
+      - backend
+
     networks:
       - az-network
 
 
+
   nginx:
+
     image: nginx:latest
 
     container_name: az_nginx
@@ -68,5 +91,7 @@ services:
       - az-network
 
 
+
 networks:
+
   az-network:
