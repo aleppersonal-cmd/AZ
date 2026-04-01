@@ -1,0 +1,72 @@
+version: "3.9"
+
+services:
+
+  mongo:
+    image: mongo:7
+    container_name: az_mongo
+    restart: always
+
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD}
+      MONGO_INITDB_DATABASE: ${MONGO_DATABASE}
+
+    volumes:
+      - ./mongo-data:/data/db
+
+    networks:
+      - az-network
+
+
+  backend:
+    build: ./backend
+    container_name: az_backend
+
+    restart: always
+
+    env_file:
+      - .env
+
+    depends_on:
+      - mongo
+
+    networks:
+      - az-network
+
+
+  frontend:
+    build: ./frontend
+
+    container_name: az_frontend
+
+    restart: always
+
+    networks:
+      - az-network
+
+
+  nginx:
+    image: nginx:latest
+
+    container_name: az_nginx
+
+    restart: always
+
+    ports:
+      - "80:80"
+      - "443:443"
+
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+
+    depends_on:
+      - frontend
+      - backend
+
+    networks:
+      - az-network
+
+
+networks:
+  az-network:
